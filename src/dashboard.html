@@ -1,0 +1,518 @@
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="dashboard.css" rel="stylesheet">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<!-- <form name="form1" action="next.html" method="get">
+    <table>
+        <tr>
+            <td id="here">test</td>
+        </tr>
+    </table>
+    </form> -->
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Mail <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Tasks</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-10">
+            <!-- Split button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">
+                    <div class="checkbox" style="margin: 0;">
+                        <label>
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span><span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">None</a></li>
+                    <li><a href="#">Read</a></li>
+                    <li><a href="#">Unread</a></li>
+                    <li><a href="#">Starred</a></li>
+                    <li><a href="#">Unstarred</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Refresh">
+                   <span class="glyphicon glyphicon-refresh"></span>   </button>
+            <!-- Single button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    More <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Mark all as read</a></li>
+                    <li class="divider"></li>
+                    <li class="text-center"><small class="text-muted">Select messages to see more actions</small></li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <span class="text-muted"><b>1</b>–<b>50</b> of <b>277</b></span>
+                <div class="btn-group btn-group-sm">
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <!-- <a href="#" class="btn btn-danger btn-sm btn-block" role="button">COMPOSE</a> -->
+            <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-danger btn-sm btn-block" role = "button">
+                Compose
+            </a>
+            <hr />
+            <ul class="nav nav-pills nav-stacked tree">
+                <li class="root active"><a href="#"><span class="badge pull-right">42</span> Inbox </a>
+                </li>
+                <li><a onclick="document.getElementById('scse').style.display='block'" class="none">SCSE</a></li>
+                <ul class="tree">
+                <li><a href="#">MICL</a></li>
+                <li><a href="#">HESL</a></li>
+                </ul>
+                <li><a onclick="document.getElementById('sbse').style.display='block'" class="none">SBSE</a></li>
+                <li><a onclick="document.getElementById('seee').style.display='block'" class="none">SEEE</a></li>
+                <li><a onclick="document.getElementById('nbs').style.display='block'" class="none">NBS</a></li>
+                <li><a href="#">Photog</a></li>
+                <li><a href="#">Student Union</a></li>
+                <li><a href="#"><span class="badge pull-right">3</span>Hall 6</a></li>
+            </ul>
+        
+            <ul class="nav nav-pills nav-stacked ">
+                <li class="root active"><a href="#"><span class="badge pull-right">3</span> Members </a>
+                </li>
+                <li><a onclick="document.getElementById('id01').style.display='block'" class="none">Jai Aggarwal</a></li>
+                <li><a href="#">Sriyash Caculo</a></li>
+                <li><a href="#">Kartik Srivastava</a></li>
+                <!-- <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li> -->
+            </ul>
+        </div>
+        <!-- <div class="col-sm-3 col-md-2">
+            <a href="#" class="btn btn-danger btn-sm btn-block" role="button">COMPOSE</a>
+            <hr />
+            <ul class="nav nav-pills nav-stacked tree">
+                <li class="root active"><a href="#"><span class="badge pull-right">42</span> Inbox </a>
+                </li>
+                <li><a href="http://www.jquery2dotnet.com">SCSE</a></li>
+                <ul class="tree">
+                <li><a href="http://www.jquery2dotnet.com">MICL</a></li>
+                <li><a href="http://www.jquery2dotnet.com">HESL</a></li>
+                </ul>
+                <li><a href="http://www.jquery2dotnet.com">Photog</a></li>
+                <li><a href="http://www.jquery2dotnet.com">Student Union</a></li>
+                <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li>
+            </ul>
+        </div> -->
+
+
+
+
+
+
+
+        <div class="col-sm-9 col-md-10">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab"><span class="glyphicon glyphicon-inbox">
+                </span>Primary</a></li>
+                <li><a href="#profile" data-toggle="tab"><span class="glyphicon glyphicon-user"></span>
+                    Groups</a></li>
+                <!-- <li><a href="#messages" data-toggle="tab"><span class="glyphicon glyphicon-tags"></span>
+                    Promotions</a></li> -->
+                <!-- <li><a href="#settings" data-toggle="tab"><span class="glyphicon glyphicon-plus no-margin"> -->
+                </span></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                            <span class="glyphicon glyphicon-star-empty"></span><span class="name" style="min-width: 120px;
+                                display: inline-block;">Admin NTU</span> <span class="">This is big title</span>
+                            <span class="text-muted" style="font-size: 11px;">- Hi hello how r u ?</span> <span
+                                class="badge">12:10 AM</span> <span class="pull-right"><span class="glyphicon glyphicon-paperclip">
+                                </span></span></a><a href="#" class="list-group-item">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <span class="glyphicon glyphicon-star-empty"></span><span class="name" style="min-width: 120px;
+                                        display: inline-block;">Admin NTU</span> <span class="">This is big title</span>
+                                    <span class="text-muted" style="font-size: 11px;">- Hi hello how r u ?</span> <span
+                                        class="badge">12:10 AM</span> <span class="pull-right"><span class="glyphicon glyphicon-paperclip">
+                                        </span></span></a><a href="#" class="list-group-item read">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">
+                                                </label>
+                                            </div>
+                                            <span class="glyphicon glyphicon-star"></span><span class="name" style="min-width: 120px;
+                                                display: inline-block;">NTU President</span> <span class="">subject</span>
+                                            <span class="text-muted" style="font-size: 11px;">- content</span> <span
+                                                class="badge">12:10 AM</span> <span class="pull-right"><span class="glyphicon glyphicon-paperclip">
+                                                </span></span></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="profile">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <span class="text-center">This tab is empty.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="messages">
+                    ...</div>
+                <div class="tab-pane fade in" id="settings">
+                    This tab is empty.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+    var url = document.location.href,
+        params = url.split('?')[1].split('&'),
+        data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+    document.getElementById('here').innerHTML = data.name;
+}
+</script>
+
+
+
+
+<!-- div class="w3-container">
+  <h2>W3.CSS Modal</h2>
+  <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button> -->
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Profile</h2>
+      </header>
+      <div class="w3-container">
+<div class="card">
+  <img src="img.jpg" alt="John" style="width:20%">
+  <h1>Jai Aggarwal</h1>
+  <p class="title">Student</p>
+  <p>Nanyang Technological university</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a> 
+  <a href="#"><i class="fa fa-twitter"></i></a> 
+  <a href="#"><i class="fa fa-linkedin"></i></a> 
+  <a href="#"><i class="fa fa-facebook"></i></a> 
+  <!-- <p><button>Contact</button></p> -->
+
+  <ul class="nav nav-pills nav-stacked ">
+        <li class="root active"><a href="#"><span class="badge pull-right">3</span> Assets </a>
+        </li>
+        <li>Asset1</li>
+        <li>Asset2</li>
+        <li>Asset3</li>
+        <!-- <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li> -->
+    </ul>
+    
+  <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-primary btn-lg" role = "button">
+        Compose
+    </a>
+</div>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div id="scse" class="w3-modal">
+        <div class="w3-modal-content">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('scse').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Group</h2>
+          </header>
+          <div class="w3-container">
+    <div class="card">
+      <img src="ntu.png" alt="John" style="width:80%" class="center">
+      <h1>School of Computer Science and Engineering</h1>
+      <p class="title">School</p>
+      <p>Nanyang Technological university</p>
+      <a href="#"><i class="fa fa-dribbble"></i></a> 
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+
+      <ul class="nav nav-pills nav-stacked ">
+            <li class="root active"><a href="#"><span class="badge pull-right">3</span> Assets </a>
+            </li>
+            <li>Asset1</li>
+            <li>Asset2</li>
+            <li>Asset3</li>
+            <!-- <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li> -->
+        </ul>
+      <!-- <p><button>Contact</button></p> -->
+      <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-primary btn-lg" role = "button">
+            Compose
+        </a>
+    </div>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p></p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="sbse" class="w3-modal">
+            <div class="w3-modal-content">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('sbse').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Group</h2>
+              </header>
+              <div class="w3-container">
+        <div class="card">
+                <img src="ntu.png" alt="John" style="width:80%" class="center">
+          <h1>School of Biological Science and Engineering</h1>
+          <p class="title">School</p>
+          <p>Nanyang Technological university</p>
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a> 
+          <a href="#"><i class="fa fa-linkedin"></i></a> 
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+    
+          <ul class="nav nav-pills nav-stacked ">
+                <li class="root active"><a href="#"><span class="badge pull-right">3</span> Assets </a>
+                </li>
+                <li>Asset1</li>
+                <li>Asset2</li>
+                <li>Asset3</li>
+                <!-- <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li> -->
+            </ul>
+          <!-- <p><button>Contact</button></p> -->
+          <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-primary btn-lg" role = "button">
+                Compose
+            </a>
+        </div>
+              </div>
+              <footer class="w3-container w3-teal">
+                <p></p>
+              </footer>
+            </div>
+          </div>
+        </div>
+
+        <div id="seee" class="w3-modal">
+                <div class="w3-modal-content">
+                  <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('seee').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>Group</h2>
+                  </header>
+                  <div class="w3-container">
+            <div class="card">
+                    <img src="ntu.png" alt="John" style="width:80%" class="center">
+              <h1>School of Electrical and Electronics Engineering</h1>
+              <p class="title">School</p>
+              <p>Nanyang Technological university</p>
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a> 
+              <a href="#"><i class="fa fa-linkedin"></i></a> 
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+        
+              <ul class="nav nav-pills nav-stacked ">
+                    <li class="root active"><a href="#"><span class="badge pull-right">3</span> Assets </a>
+                    </li>
+                    <li>Asset1</li>
+                    <li>Asset2</li>
+                    <li>Asset3</li>
+                    <!-- <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li> -->
+                </ul>
+              <!-- <p><button>Contact</button></p> -->
+              <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-primary btn-lg" role = "button">
+                    Compose
+                </a>
+            </div>
+                  </div>
+                  <footer class="w3-container w3-teal">
+                    <p></p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div id="nbs" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <header class="w3-container w3-teal"> 
+                        <span onclick="document.getElementById('nbs').style.display='none'" 
+                        class="w3-button w3-display-topright">&times;</span>
+                        <h2>Group</h2>
+                      </header>
+                      <div class="w3-container">
+                <div class="card">
+                        <img src="ntu.png" alt="John" style="width:80%" class="center">
+                  <h1>Nanyang Business School</h1>
+                  <p class="title">School</p>
+                  <p>Nanyang Technological university</p>
+                  <a href="#"><i class="fa fa-dribbble"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a> 
+                  <a href="#"><i class="fa fa-linkedin"></i></a> 
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+            
+                  <ul class="nav nav-pills nav-stacked ">
+                        <li class="root active"><a href="#"><span class="badge pull-right">3</span> Assets </a>
+                        </li>
+                        <li>Asset1</li>
+                        <li>Asset2</li>
+                        <li>Asset3</li>
+                        <!-- <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Hall 6</a></li> -->
+                    </ul>
+                  <!-- <p><button>Contact</button></p> -->
+                  <a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-primary btn-lg" role = "button">
+                        Compose
+                    </a>
+                </div>
+                      </div>
+                      <footer class="w3-container w3-teal">
+                        <p></p>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">Compose</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">To</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="inputEmail1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Cc / Bcc</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="cc" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Subject</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="inputPassword1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Message</label>
+                        <div class="col-lg-10">
+                            <textarea rows="10" cols="30" class="form-control" id="" name=""></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <span class="btn green fileinput-button">
+                              <i class="fa fa-plus fa fa-white"></i>
+                              <span>Attachment</span>
+                              <input type="file" name="files[]" multiple="">
+                            </span>
+
+                            <span style="float:right;">Contract</span>
+                            <div style = "position:absolute; left:410px; top:30px;">
+                            <select>     
+                            <option value="volvo">none</option>
+                            <option value="saab">asset1</option>
+                            <option value="opel">asset2</option>
+                            <option value="audi">asset3</option>
+                            </select>
+                            </div>
+
+
+
+                              </div>
+
+
+                              <!-- <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                            <span>
+                                                    
+                                                    <select>
+                                                      <option value="volvo">Volvo</option>
+                                                      <option value="saab">Saab</option>
+                                                      <option value="opel">Opel</option>
+                                                      <option value="audi">Audi</option>
+                                                    </select>
+                                                  
+                                                    </span>
+                                          </div> -->
+
+
+                            <!-- <button class="btn btn-send" type="submit">Send</button> -->
+                            <button class="btn btn-primary btn-lg" type="submit">Send</button>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+            
+</body>
+</html>
